@@ -21,9 +21,14 @@ export default async function Navbar() {
           <Link href="/catalog/aquascapes" className={styles.link}>Aquascapes</Link>
           <Link href="/guides" className={styles.link}>Guides</Link>
           {user && (
-            <Link href="/wishlist" className={styles.link} style={{ color: 'var(--accent-teal)' }}>
-              My Wishlist
-            </Link>
+            <>
+              <Link href="/wishlist" className={styles.link} style={{ color: 'var(--accent-teal)' }}>
+                My Wishlist
+              </Link>
+              <Link href="/admin" className={styles.link} style={{ color: 'var(--accent-gold)' }}>
+                Admin
+              </Link>
+            </>
           )}
         </div>
 

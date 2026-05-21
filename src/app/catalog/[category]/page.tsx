@@ -81,13 +81,13 @@ export default function CatalogPage() {
     });
   }, [initialData, searchQuery, selectedDifficulty, selectedWaterType]);
 
-  const pageTitles = {
+  const pageTitles: Record<string, string> = {
     fish: "Freshwater Fish",
     plant: "Aquatic Plants",
     invertebrate: "Invertebrates"
   };
 
-  const pageDescriptions = {
+  const pageDescriptions: Record<string, string> = {
     fish: "Explore our comprehensive catalog of freshwater fish species, from peaceful community tetras to majestic cichlids.",
     plant: "Discover lush aquatic plants to create a natural ecosystem and perfect aquascape.",
     invertebrate: "Find the perfect clean-up crew and fascinating invertebrate additions for your tank."
