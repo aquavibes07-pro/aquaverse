@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { createClient } from '@/utils/supabase/server';
 import WishlistButton from '@/components/WishlistButton';
+import CommentsSection from '@/components/CommentsSection';
 import styles from './page.module.css';
 
 export default async function SpeciesDetailPage({ params }: { params: Promise<{ id: string }> }) {
@@ -171,6 +172,8 @@ export default async function SpeciesDetailPage({ params }: { params: Promise<{ 
           </div>
         </aside>
       </div>
+
+      <CommentsSection speciesId={sp.id} />
     </div>
   );
 }
