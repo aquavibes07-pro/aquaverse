@@ -20,6 +20,7 @@ export default async function Navbar() {
           <Link href="/catalog/invertebrates" className={styles.link}>Invertebrates</Link>
           <Link href="/catalog/aquascapes" className={styles.link}>Aquascapes</Link>
           <Link href="/guides" className={styles.link}>Guides</Link>
+          <Link href="/tank-builder" className={styles.link} style={{ color: 'var(--accent-gold)' }}>Tank Builder</Link>
           {user && (
             <>
               <Link href="/wishlist" className={styles.link} style={{ color: 'var(--accent-teal)' }}>

@@ -124,7 +124,7 @@ export default async function SpeciesDetailPage({ params }: { params: Promise<{ 
 
           <div className={styles.actions}>
             <WishlistButton speciesId={sp.id} />
-            <Link href="/compatibility" className="btn-secondary" style={{ textDecoration: 'none' }}>
+            <Link href={`/tank-builder?add=${sp.id}`} className="btn-secondary" style={{ textDecoration: 'none' }}>
               Check Compatibility
             </Link>
           </div>
